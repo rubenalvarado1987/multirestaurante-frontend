@@ -1,0 +1,134 @@
+<nav class = "nav-extended">
+  <div class = "container">
+      <div class="nav-wrapper">
+
+
+<!--
+          <ul id = "nav-mobile" class="left hide-on-med-and-down">
+                <li >
+
+                  <a href="#" class="brand-logo">Multi Restaurant</a>
+                  </li>
+          </ul>
+
+        -->
+
+
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+
+
+              <li class="collection-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+                  <a [routerLink] = "['/restaurants/all']">
+                    <div>
+                        Restaurants
+
+                      </div>
+                  </a>
+                </li>
+
+                <li class="collection-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+                    <a [routerLink] = "['/restaurants/manage']">
+                      <div>
+                          Add Restaurant
+
+                        </div>
+                    </a>
+                  </li>
+
+
+                  <li class="collection-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+                      <a [routerLink] = "['/category/all']">
+                        <div>
+                            Categories
+
+                          </div>
+                      </a>
+                    </li>
+
+                    <li class="collection-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+                        <a [routerLink] = "['/category/manage']">
+                          <div>
+                              Add Category
+
+                            </div>
+                        </a>
+                      </li>
+
+
+                      <li class="collection-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+                          <a [routerLink] = "['/item/all']">
+                            <div>
+                                Items
+
+                              </div>
+                          </a>
+                        </li>
+
+
+                        <li class="collection-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+                            <a [routerLink] = "['/item/manage']">
+                              <div>
+                                  Add Item
+
+                                </div>
+                            </a>
+                          </li>
+
+                          <li class="collection-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+                              <a [routerLink] = "['/order/all']">
+                                <div>
+                                    Orders
+
+                                  </div>
+                              </a>
+                            </li>
+
+
+                            <li>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                               </li>
+                               <li>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;
+                                 </li>
+
+                                 <li>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                   </li>
+
+
+            <li class="dropdown-button dropdown-trigger" data-target="dropdown">
+                <i class ="fa fa-globe fa-1x badge"></i>
+                <!--
+                <span class="nav-label-icon" *ngIf="count.length > 0"> {{count.length}}</span>
+                <ul id='dropdown' class='dropdown-content col s12 collection'>
+                    <li class="collection-item avatar" *ngFor="let data of notifications">
+                      <img src = "http://res.cloudinary.com/funnyionic/image/upload/v{{data.senderId.picVersion}}/{{data.senderId.picId}}" class="circle">
+                      <span [ngClass]="data.read ? 'isRead' : 'unRead'">{{data.message}}</span>
+                      <p class="time">{{TimeFromNow(data.created)}}</p>
+                    </li>
+
+                    <li *ngIf = "notifications.length <= 0">
+                      <p class="text">No Notifications</p>
+                    </li>
+
+                    <p class = "secondary-content">
+                      <a class="markAll btn" (click)="MarkAll()">Mark All as Read</a>
+                    </p>
+
+                  </ul>
+                -->
+
+             </li>
+
+             <li>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+               </li>
+
+
+
+            <li><a (click)="logout()">Logout</a></li>
+          </ul>
+        </div>
+
+  </div>
+</nav>
