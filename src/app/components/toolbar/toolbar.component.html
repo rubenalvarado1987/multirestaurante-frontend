@@ -102,7 +102,7 @@
                 <span class="nav-label-icon" *ngIf="count.length > 0"> {{count.length}}</span>
                 <ul id='dropdown' class='dropdown-content col s12 collection'>
                     <li class="collection-item avatar" *ngFor="let data of notifications">
-                      <img src = "http://res.cloudinary.com/funnyionic/image/upload/v{{data.senderId.picVersion}}/{{data.senderId.picId}}" class="circle">
+                      <img src = "http://res.cloudinary.com/dssvohelt/image/upload/v{{data.senderId.picVersion}}/{{data.senderId.picId}}" class="circle">
                       <span [ngClass]="data.read ? 'isRead' : 'unRead'">{{data.message}}</span>
                       <p class="time">{{TimeFromNow(data.created)}}</p>
                     </li>
